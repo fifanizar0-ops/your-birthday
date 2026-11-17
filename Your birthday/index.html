@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your birthday🌟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+
+    <header>
+      <div class="logo">🌟 Your birthday</div>
+      <p class="tagline">Discover the story of your birthday.</p>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">YOUR DAY. YOUR HISTORY.</span>
+      <h1>The world on<br><span>your birthday.</span></h1>
+      <p>Discover the weather, historical events, your city and music from the day you were born.</p>
+    </section>
+
+    <section class="form-card">
+      <label for="city">Your city</label>
+      <input id="city" type="text" placeholder="Enter your city...">
+
+      <label for="birthday">Your date of birth</label>
+      <input id="birthday" type="date">
+
+      <button id="discoverBtn" onclick="discover()">
+        Discover My Birthday <span>→</span>
+      </button>
+
+      <p id="message" aria-live="polite"></p>
+    </section>
+
+    <div id="results" class="results">
+
+      <section class="section-card">
+        <div class="section-label">01 — YOUR LIFE</div>
+        <h2>🎂 Your age</h2>
+        <div class="age-display" id="age"></div>
+        <p class="muted" id="birthDateText"></p>
+      </section>
+
+      <section class="section-card">
+        <div class="section-label">02 — THE WEATHER</div>
+        <h2>🌦️ Birthday weather</h2>
+        <div class="weather-display">
+          <div id="weatherIcon">☀️</div>
+          <div>
+            <h3 id="weather"></h3>
+            <p id="temperature"></p>
+          </div>
+        </div>
+        <p class="muted" id="weatherPlace"></p>
+      </section>
+
+      <section class="section-card">
+        <div class="section-label">03 — YOUR CITY</div>
+        <h2>🏙️ Your city</h2>
+        <div id="cityImage" class="image-area">
+          <p>City photo will appear here.</p>
+        </div>
+        <h3 id="cityName"></h3>
+        <p class="muted" id="cityDescription"></p>
+        <p class="source-note">Historical/archive image, not necessarily from your exact birth date.</p>
+      </section>
+
+      <section class="section-card">
+        <div class="section-label">04 — WORLD HISTORY</div>
+        <h2>🌍 What happened on this day?</h2>
+        <div id="events" class="items-list">
+          <p class="muted">Historical events will appear here.</p>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="section-label">05 — MUSIC HISTORY</div>
+        <h2>🎵 Albums released</h2>
+        <div id="albums" class="album-grid">
+          <p class="muted">Music releases will appear here.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      <p>Made with ❤️ | Your birthday🌟</p>
+      <p>Data: Open-Meteo · Wikipedia · Wikimedia Commons · MusicBrainz</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
